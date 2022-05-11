@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+body {
+  background: rgba(28, 28, 28, 1);
+  color: var(--default-font-color);
+  font-family: 'Goldman';
+  background-image: url("../../../public/images/rectangle.svg");
+}
+.hero {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  background: rgba(28, 28, 28, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  margin-top: 0;
+  /* height: 10px; */
+}
+video {
+  /* margin: -2rem; */
+  opacity: 0.7;
+}
+main {
+  text-align: center;
+  padding: 0rem 18rem;
+  box-sizing: border-box;
+  margin-top: -8rem;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    1s both;
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+/* main > h1 {
+  font-size: 3em;
+  animation: shake-horizontal 12s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite
+    both;
+} */
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-9px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(9px);
+  }
+  80% {
+    transform: translateY(7px);
+  }
+  90% {
+    transform: translateY(-7px);
+  }
+}
+.hero-desc {
+  font-weight: bold;
+  font-size: 1.2em;
+  top:10rem;
+}
+main > button {
+  margin-top: 1rem;
+  background: var(--gradient-bg-btn);
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 1.5rem;
+  color: var(--default-font-color);
+  font-family: var(--default-font-family);
+  transform: translate(0, 0) translate3d(0, 0, 80px);
+  transition: 0.2s;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main > button:hover {
+  opacity: 1;
+  transform: scale(1.1) translate(0, 0) translate3d(0, 0, 80px);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  color: var(--default-font-color);
+  font-size: 1.2em;
+  transition: 0.2s ease;
+  opacity: 0.7;
+}
+@media (max-width: 720px) {
+
+}
+/* main > button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+} */
+
+
+.title {
+  font-size: 1.8em;
+}
+/* .hero {
+  height: 50vh;
+  margin-top: 0;
+} */
+/* main > h1 {
+  margin-top: 0;
+} */
+.video-div {
+  top: 0;
+}
+
+
+ @media (max-width: 1280px) {
+  main {
+    padding: 0 12rem;
+  }
+ 
+}
+@media (max-width: 980px) {
+  main {
+    padding: 0 8rem;
+  }
+  .info-card {
+    padding: 1rem 1.4rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+
+}
+@media (max-width: 720px) {
+  main {
+    padding: 0 5rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+  main button {
+    opacity: 1;
+  }
+
+}
+
+/* @media (max-width: 520px) {
+  main {
+    box-sizing: border-box;
+    padding: 6rem 1rem 1rem 1rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero-desc {
+    font-size: 1em;
+    margin-top: 10rem;
+  }
+  .info-card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}  */
+@media only screen and (max-width: 600px) {
+  main {
+    box-sizing: border-box;
+    padding: 6rem 1rem 1rem 1rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+ /* .video-div {
+    height: 371px;
+  }  */
+   /* main > h1 {
+    margin: 0;
+    font-size: 3em;
+  animation: shake-horizontal 12s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite
+    both;
+  }  */
+  .hero-desc {
+    font-size: 1em;
+    margin-top: 10rem;
+  }
+  .info-card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+span.words {
+  position: relative;
+}
+
+span.words::before {
+  content: "business";
+  animation: animate infinite 10s;
+}
+
+@keyframes animate {
+  0% {
+    content: "culture";
+  }
+  50% {
+    content: "shopping";
+  }
+  100% {
+    content: "social events";
+  } 
+}
+main .logo{
+  width: 200px;
+  height: 200px;
+  font-size: 3em;
+  animation: shake-horizontal 12s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite
+    both;
+}
+
+ /* .video-div {
+    height: auto;
+  } */
+  /* .info-card {
+    margin: 1rem 3rem;
+  } */
